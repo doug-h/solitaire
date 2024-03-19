@@ -102,7 +102,6 @@ void sdlgl_init(sdlgl_state *s, int width, int height, arena *perm,
   glVertexAttribIPointer(1, 1, GL_INT, sizeof(card_vert),
                          (void *)offsetof(card_vert, face_id));
   glEnableVertexAttribArray(1);
-  // glBindVertexArray(0);
 
   const char *vert_code =
 #include "../shaders/card.vert"
